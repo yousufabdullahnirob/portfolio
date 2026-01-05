@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Background3D from './components/Background3D';
 
 import { useEffect } from 'react';
 
@@ -27,6 +28,7 @@ function App() {
 
   return (
     <div className="app">
+      <Background3D />
       <Navbar />
       <main>
         <Hero />

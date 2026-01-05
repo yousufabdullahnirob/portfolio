@@ -6,9 +6,9 @@
   --accent-color: #38bdf8;
   --accent-hover: #0ea5e9;
   --accent-glow: 0 0 20px rgba(56, 189, 248, 0.5);
-  --card-bg: #1e293b;
+  --card-bg: rgba(30, 41, 59, 0.7);
   --border-color: #334155;
-  --nav-bg: rgba(15, 23, 42, 0.85);
+  --nav-bg: rgba(15, 23, 42, 0.6);
 
   --font-main: 'Inter', sans-serif;
   --max-width: 1200px;
@@ -29,9 +29,8 @@ html {
 
 body {
   font-family: var(--font-main);
-  background: linear-gradient(-45deg, #0f172a, #020617, #172554, #0f172a);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
+  background-color: transparent;
+  /* Changed for 3D background */
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
@@ -90,6 +89,7 @@ img {
   text-align: center;
   margin-bottom: 3rem;
   background: linear-gradient(to right, var(--text-primary), var(--accent-color));
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
