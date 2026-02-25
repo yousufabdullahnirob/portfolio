@@ -1,17 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Services from './components/Services';
-import Contact from './components/Contact';
+import Home from './components/Home';
+import Blog from './components/Blog';
 import Footer from './components/Footer';
 import Background3D from './components/Background3D';
 
-import { useEffect } from 'react';
-
 function App() {
+  const [isDark, setIsDark] = React.useState(true);
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -26,20 +23,20 @@ function App() {
     return () => observer.disconnect();
   }, []);
 
+  const toggleTheme = () => setIsDark(!isDark);
+
   return (
-    <div className="app">
-      <Background3D />
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Services />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className={`app ${isDark ? 'dark-theme' : 'light-theme'}`}>
+        <Background3D />
+        <Navbar toggleTheme={toggleTheme} isDark={isDark} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

@@ -17,6 +17,19 @@
   --transition: all 0.3s ease;
 }
 
+.light-theme {
+  --bg-color: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --accent-color: #0284c7;
+  --accent-hover: #0369a1;
+  --accent-glow: 0 0 20px rgba(2, 132, 199, 0.3);
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --border-color: #e2e8f0;
+  --nav-bg: rgba(248, 250, 252, 0.8);
+}
+
 * {
   margin: 0;
   padding: 0;

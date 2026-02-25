@@ -9,27 +9,27 @@ const About = () => {
                 <h2 className="section-title">About Me</h2>
                 <div className="about-content">
                     <div className="about-text">
-                        <h3>Turning complex problems into simple, beautiful solutions.</h3>
+                        <h3>Building Scalable Solutions with a Career-Focused Mindset.</h3>
                         <p>
-                            I specialize in building clean, scalable web solutions and AI-powered automation systems.
-                            My work focuses on efficiency, performance, and real-world usability.
+                            I am a Computer Science student specializing in full-stack development using Django and modern frontend frameworks. 
+                            I focus on building scalable APIs, clean UI systems, and solving real-world problems through structured architecture.
                         </p>
                         <p>
-                            With a strong background in both full-stack development and emerging AI technologies,
-                            I help businesses bridge the gap between traditional software and intelligent automation.
+                            My expertise bridges the gap between traditional web development and machine learning, 
+                            allowing me to create intelligent applications that provide real value.
                         </p>
                         <div className="about-stats">
                             <div className="stat-item">
-                                <span className="stat-number">1+</span>
-                                <span className="stat-label">Year Experience</span>
+                                <span className="stat-number">7th</span>
+                                <span className="stat-label">Semester CSE</span>
                             </div>
                             <div className="stat-item">
                                 <span className="stat-number">10+</span>
-                                <span className="stat-label">Projects Completed</span>
+                                <span className="stat-label">Academic Projects</span>
                             </div>
                             <div className="stat-item">
-                                <span className="stat-number">15+</span>
-                                <span className="stat-label">Technologies Used</span>
+                                <span className="stat-number">ML+</span>
+                                <span className="stat-label">Web Dev Focus</span>
                             </div>
                         </div>
                     </div>

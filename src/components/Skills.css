@@ -9,15 +9,15 @@
     padding: 2.5rem;
     border-radius: 12px;
     border: 1px solid var(--border-color);
-    transition: var(--transition);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     overflow: hidden;
 }
 
 .skill-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     border-color: var(--accent-color);
-    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 35px -10px rgba(56, 189, 248, 0.2);
 }
 
 .skill-card::after {
