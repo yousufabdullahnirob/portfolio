@@ -3,6 +3,7 @@ import Hero from './Hero';
 import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
+import CaseStudy from './CaseStudy';
 import Services from './Services';
 import Contact from './Contact';
 
@@ -13,6 +14,7 @@ const Home = () => {
             <About />
             <Skills />
             <Projects />
+            <CaseStudy />
             <Services />
             <Contact />
         </main>

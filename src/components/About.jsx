@@ -11,12 +11,13 @@ const About = () => {
                     <div className="about-text">
                         <h3>Building Scalable Solutions with a Career-Focused Mindset.</h3>
                         <p>
-                            I am a Computer Science student specializing in full-stack development using Django and modern frontend frameworks. 
-                            I focus on building scalable APIs, clean UI systems, and solving real-world problems through structured architecture.
+                            Computer Science student specializing in full-stack development. I build scalable APIs, clean UI systems, and solve real-world problems through structured architecture.
                         </p>
                         <p>
-                            My expertise bridges the gap between traditional web development and machine learning, 
-                            allowing me to create intelligent applications that provide real value.
+                            My expertise bridges traditional web development and machine learning to create intelligent applications.
+                        </p>
+                        <p className="learning-text">
+                            <strong>Currently Learning:</strong> Exploring Dockerized deployments and scalable ML APIs.
                         </p>
                         <div className="about-stats">
                             <div className="stat-item">

@@ -9,7 +9,8 @@ const Footer = () => {
                     Yousuf Abdullah<span>.</span>
                 </div>
                 <p className="footer-copyright">
-                    &copy; {new Date().getFullYear()} Yousuf Abdullah. All rights reserved.
+                    &copy; {new Date().getFullYear()} Yousuf Abdullah. All rights reserved. <br/>
+                    <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Built with React + CSS. Hosted locally/Vercel.</span>
                 </p>
                 <div className="footer-socials">
                     <a href="https://github.com/yousufabdullahnirob" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>

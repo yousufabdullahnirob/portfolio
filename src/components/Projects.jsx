@@ -5,25 +5,45 @@ const Projects = () => {
     const [repos, setRepos] = useState([]);
     const [loading, setLoading] = useState(true);
 
+    const featuredProjects = [
+        {
+            id: 1,
+            name: "Spam Detection System",
+            description: "Built with PyTorch & Scikit-learn. Achieved 91% accuracy analyzing natural language. REST API built using FastAPI and deployed on Render.",
+            language: "Python",
+            html_url: "https://github.com/yousufabdullahnirob/Spam-Detection-Model",
+            homepage: "#"
+        },
+        {
+            id: 2,
+            name: "Krishi Sheba Portal",
+            description: "A comprehensive agricultural service platform designed to empower farmers with digital resources and expert consultation tools.",
+            language: "Full Stack",
+            html_url: "https://github.com/yousufabdullahnirob/Krishishebaportal",
+            homepage: "#"
+        },
+        {
+            id: 3,
+            name: "Real Estate Property Platform",
+            description: "Full-stack React platform for real estate listings. Implemented advanced search, filtering, and responsive design components.",
+            language: "React",
+            html_url: "https://github.com/yousufabdullahnirob/realestate",
+            homepage: "http://localhost:5173" // Placeholder for live demo
+        }
+    ];
+
     useEffect(() => {
-        fetch('https://api.github.com/users/yousufabdullahnirob/repos?sort=updated&per_page=6')
-            .then(res => res.json())
-            .then(data => {
-                if (Array.isArray(data)) {
-                    setRepos(data);
-                }
-                setLoading(false);
-            })
-            .catch(err => {
-                console.error("Error fetching repos:", err);
-                setLoading(false);
-            });
-    }, []);
+        // Simulating data load for structure preserving
+        setTimeout(() => {
+            setRepos(featuredProjects);
+            setLoading(false);
+        }, 500);
+    }, [featuredProjects]);
 
     return (
         <section className="section projects reveal" id="projects">
             <div className="container">
-                <h2 className="section-title">Open Source Projects</h2>
+                <h2 className="section-title">Featured Engineering Projects</h2>
                 {loading ? (
                     <div className="loading-spinner">Loading projects...</div>
                 ) : (
@@ -40,12 +60,15 @@ const Projects = () => {
                                     </p>
                                     <div className="project-tech">
                                         {repo.language && <span className="tech-tag">{repo.language}</span>}
-                                        {repo.stargazers_count > 0 && <span className="tech-tag">⭐ {repo.stargazers_count}</span>}
                                     </div>
                                     <div className="project-links">
-                                        <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="project-link">GitHub Profile &rarr;</a>
+                                        <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="project-link">
+                                            <span>View Source</span> &nbsp; &rarr;
+                                        </a>
                                         {repo.homepage && (
-                                            <a href={repo.homepage} target="_blank" rel="noopener noreferrer" className="project-link">Live Demo &rarr;</a>
+                                            <a href={repo.homepage} target="_blank" rel="noopener noreferrer" className="project-link live-demo">
+                                                <span className="live-dot"></span> Live Demo &rarr;
+                                            </a>
                                         )}
                                     </div>
                                 </div>

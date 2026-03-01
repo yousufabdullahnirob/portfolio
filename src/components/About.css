@@ -21,6 +21,19 @@
     line-height: 1.8;
 }
 
+.learning-text {
+    background-color: rgba(56, 189, 248, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+    font-size: 0.95rem;
+    color: var(--text-primary) !important;
+}
+
+.learning-text strong {
+    color: var(--accent-color);
+}
+
 .about-stats {
     display: flex;
     gap: 3rem;
