@@ -9,30 +9,16 @@ const About = () => {
                 <h2 className="section-title">About Me</h2>
                 <div className="about-content">
                     <div className="about-text">
-                        <h3>Building Scalable Solutions with a Career-Focused Mindset.</h3>
+                        <h3>Engineering Production-Ready AI & Web Architectures.</h3>
                         <p>
-                            Computer Science student specializing in full-stack development. I build scalable APIs, clean UI systems, and solve real-world problems through structured architecture.
+                            I build and deploy machine learning systems designed for real-world performance and scalability. My work focuses on model development, inference APIs, and integrating AI solutions into modern web infrastructures.
                         </p>
                         <p>
-                            My expertise bridges traditional web development and machine learning to create intelligent applications.
+                            With a strong backend foundation, I develop scalable APIs and deployment pipelines that allow machine learning models to operate efficiently in production environments.
                         </p>
                         <p className="learning-text">
-                            <strong>Currently Learning:</strong> Exploring Dockerized deployments and scalable ML APIs.
+                            <strong>Currently Learning:</strong> Currently exploring containerized ML deployments, model optimization, and scalable AI infrastructure design.
                         </p>
-                        <div className="about-stats">
-                            <div className="stat-item">
-                                <span className="stat-number">7th</span>
-                                <span className="stat-label">Semester CSE</span>
-                            </div>
-                            <div className="stat-item">
-                                <span className="stat-number">10+</span>
-                                <span className="stat-label">Academic Projects</span>
-                            </div>
-                            <div className="stat-item">
-                                <span className="stat-number">ML+</span>
-                                <span className="stat-label">Web Dev Focus</span>
-                            </div>
-                        </div>
                     </div>
                     <div className="about-image">
                         <img src={profileImg} alt="Yousuf" className="profile-img" />
