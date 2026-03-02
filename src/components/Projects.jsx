@@ -65,11 +65,7 @@ const Projects = () => {
                                         <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="project-link">
                                             <span>View Source</span> &nbsp; &rarr;
                                         </a>
-                                        {repo.homepage && (
-                                            <a href={repo.homepage} target="_blank" rel="noopener noreferrer" className="project-link live-demo">
-                                                <span className="live-dot"></span> Live Demo &rarr;
-                                            </a>
-                                        )}
+
                                     </div>
                                 </div>
                             </div>

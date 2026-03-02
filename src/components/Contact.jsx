@@ -54,7 +54,7 @@ const Contact = () => {
                             </div>
                             <div className="contact-item">
                                 <span className="icon">🐙</span>
-                                <a href="https://github.com/yousufabdullahnirob" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+                                <a href="https://github.com/yousufabdullahnirob/portfolio" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
                             </div>
                         </div>
                     </div>
