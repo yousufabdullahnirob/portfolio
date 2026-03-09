@@ -1,27 +1,28 @@
 import React from 'react';
+import { Monitor, BrainCircuit, Bot } from 'lucide-react';
 import './Services.css';
 
 const Services = () => {
     const services = [
         {
             title: "Web Application Development",
-            description: "Custom, high-performance web applications built with modern technologies like React, Next.js, and Node.js. Focused on scalability and user experience.",
-            icon: "💻"
+            description: "Custom web applications built with Django and React. Focused on scalability, REST APIs, and clean user experience.",
+            icon: <Monitor size={40} strokeWidth={1.5} />
         },
         {
-            title: "AI Automation & Workflows",
-            description: "Streamline your business processes with intelligent automation. Save time by automating repetitive tasks using tools like n8n and Zapier connected to AI.",
-            icon: "🤖"
+            title: "Machine Learning & Computer Vision",
+            description: "Building ML models using PyTorch and scikit-learn. Working with image processing and computer vision using OpenCV.",
+            icon: <BrainCircuit size={40} strokeWidth={1.5} />
         },
         {
-            title: "Chatbot Integration",
-            description: "Deploy smart AI chatbots that understand context and provide instant support to your customers, 24/7. Integrated seamlessly into your website.",
-            icon: "💬"
+            title: "AI & Chatbot Development",
+            description: "Building smart chatbots using OpenAI API and LangChain, integrated with ElevenLabs for voice capabilities.",
+            icon: <Bot size={40} strokeWidth={1.5} />
         }
     ];
 
     return (
-        <section className="section services" id="services">
+        <section className="section services reveal" id="services">
             <div className="container">
                 <h2 className="section-title">Engineering Focus Areas</h2>
                 <div className="services-grid">

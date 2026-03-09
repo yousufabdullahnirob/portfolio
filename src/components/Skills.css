@@ -1,7 +1,7 @@
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
 }
 
 .skill-card {
@@ -20,57 +20,64 @@
 }
 
 .skill-card:hover {
-    transform: translateY(-10px);
-    border-color: var(--accent-color);
-    box-shadow: 0 15px 35px -10px rgba(56, 189, 248, 0.2);
+  transform: translateY(-10px);
+  border-color: var(--accent-color);
+  box-shadow: 0 15px 35px -10px rgba(56, 189, 248, 0.2);
 }
 
 .skill-card::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: var(--accent-color);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--accent-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
 }
 
 .skill-card:hover::after {
-    transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.skill-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.skill-icon {
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .skill-category-title {
-    font-size: 1.5rem;
-    color: var(--text-primary);
-    margin-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-}
-
-.category-icon {
-    font-size: 1.8rem;
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  margin-bottom: 0;
 }
 
 .skill-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 
 .skill-item {
-    color: var(--text-secondary);
-    font-size: 1.05rem;
-    display: flex;
-    align-items: center;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .skill-item::before {
-    content: '▹';
-    color: var(--accent-color);
-    margin-right: 12px;
-    font-size: 1.2rem;
+  content: "▹";
+  color: var(--accent-color);
+  margin-right: 10px;
+  font-size: 1.2rem;
 }
