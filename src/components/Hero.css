@@ -103,6 +103,21 @@
     }
 }
 
+.cursor {
+    display: inline-block;
+    width: 3px;
+    height: 1em;
+    background-color: var(--accent-color);
+    margin-left: 4px;
+    animation: blink 0.8s step-end infinite;
+    vertical-align: middle;
+}
+
+@keyframes blink {
+    from, to { background-color: transparent; }
+    50% { background-color: var(--accent-color); }
+}
+
 @media (max-width: 768px) {
     .hero-name {
         font-size: 3rem;
