@@ -56,10 +56,10 @@ const Projects = () => {
         },
         {
             id: 7,
-            name: "Traveling Agency Platform",
-            description: "Comprehensive travel management system for booking tours, managing itineraries, and customer service.",
-            language: "Web App",
-            html_url: "https://github.com/yousufabdullahnirob/Traveling_agency",
+            name: "Expense Tracker",
+            description: "A modern, full-stack Expense Tracker built with Django REST Framework and React. Features JWT authentication and interactive charts.",
+            language: "React / Django",
+            html_url: "https://github.com/yousufabdullahnirob/expense-tracker",
             category: "Web & Full Stack Development"
         },
         {
