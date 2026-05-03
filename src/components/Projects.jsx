@@ -16,18 +16,58 @@ const Projects = () => {
         },
         {
             id: 2,
+            name: "Smart Email Reply Automation",
+            description: "AI-powered email auto-responder using OpenAI and Gmail API for intelligent communication management.",
+            language: "Python",
+            html_url: "https://github.com/yousufabdullahnirob/smart_email_reply_automation",
+            category: "AI & Machine Learning"
+        },
+        {
+            id: 3,
+            name: "Krishi Sheba Portal (AI Edition)",
+            description: "AI-driven agricultural platform with crop recommendation and disease detection systems to empower farmers.",
+            language: "Python / AI",
+            html_url: "https://github.com/yousufabdullahnirob/krishiShebaPortal1st",
+            category: "AI & Machine Learning"
+        },
+        {
+            id: 4,
+            name: "Student Success Analysis",
+            description: "Machine learning project focused on predicting student performance and pass/fail outcomes using academic data.",
+            language: "Python",
+            html_url: "https://github.com/yousufabdullahnirob/Student-Success-Analysis",
+            category: "AI & Machine Learning"
+        },
+        {
+            id: 5,
+            name: "Real Estate Hub",
+            description: "Modern real estate platform with advanced property management, search filters, and responsive UI.",
+            language: "React / Django",
+            html_url: "https://github.com/yousufabdullahnirob/RealEstateHub",
+            category: "Web & Full Stack Development"
+        },
+        {
+            id: 6,
+            name: "University Advising System",
+            description: "Automated course advising system with intelligent conflict detection and academic planning tools.",
+            language: "Full Stack",
+            html_url: "https://github.com/yousufabdullahnirob/University-Advising-System",
+            category: "Web & Full Stack Development"
+        },
+        {
+            id: 7,
+            name: "Traveling Agency Platform",
+            description: "Comprehensive travel management system for booking tours, managing itineraries, and customer service.",
+            language: "Web App",
+            html_url: "https://github.com/yousufabdullahnirob/Traveling_agency",
+            category: "Web & Full Stack Development"
+        },
+        {
+            id: 8,
             name: "Krishi Sheba Portal",
             description: "A comprehensive agricultural service platform designed to empower farmers with digital resources and expert consultation tools.",
             language: "Full Stack",
             html_url: "https://github.com/yousufabdullahnirob/Krishishebaportal",
-            category: "Web & Full Stack Development"
-        },
-        {
-            id: 3,
-            name: "Real Estate Property Platform",
-            description: "Full-stack React platform for real estate listings. Implemented advanced search, filtering, and responsive design components.",
-            language: "React",
-            html_url: "https://github.com/yousufabdullahnirob/realestate",
             category: "Web & Full Stack Development"
         }
     ];
