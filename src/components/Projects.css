@@ -1,3 +1,16 @@
+.category-section {
+  margin-bottom: 4rem;
+}
+
+.category-title {
+  font-size: 1.8rem;
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  border-left: 4px solid var(--accent-color);
+  letter-spacing: 1px;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
